@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Form Login dan Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#registration">Registrasi</a></li>
+            </ul>
+        </nav>
+
+        <input type="checkbox" id="check">
+        
+        <!-- Formulir Login -->
+        <div id="login" class="login form">
+            <header>Form Login</header>
+            <form action="#" method="POST"> <!-- Menambahkan method="POST" untuk menangani data form -->
+                <input type="text" name="email" placeholder="Masukkan email">
+                <input type="password" name="password" placeholder="Masukkan kata sandi">
+                <a href="#">Lupa Kata Sandi</a>
+                <input type="submit" value="Login" class="button"> <!-- Menggunakan type="submit" pada tombol login -->
+            </form>
+            <div class="signup">
+                <span class="signup">Belum punya akun?
+                <label for="check">Daftar</label>
+                </span>
+            </div>
+        </div>
+
+        <!-- Formulir Registrasi -->
+        <div id="registration" class="registration form">
+            <header>Form Registrasi</header>
+            <form action="#" method="POST"> <!-- Menambahkan method="POST" untuk menangani data form -->
+                <input type="text" name="reg_email" placeholder="Masukkan email">
+                <input type="password" name="reg_password" placeholder="Masukkan kata sandi">
+                <input type="password" name="confirm_password" placeholder="Ulangi kata sandi">
+                <input type="submit" class="button" value="Daftar"> <!-- Menggunakan type="submit" pada tombol daftar -->
+            </form>
+            <div class="signup">
+                <span class="signup">Sudah punya akun?
+                <label for="check">Login</label>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
